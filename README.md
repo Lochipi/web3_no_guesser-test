@@ -1,30 +1,22 @@
-# React + TypeScript + Vite
+# Game: Number gase.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple and interactive Number Guesser game built with **React**, **Vite**, **TypeScript**, and **Ant Design**. 
+This game generates a random number between `1` and `100`, and the player has a limited number of attempts to guess the correct number. The application provides feedback on each guess, indicating whether the guess is `too high`, `too low`, or `correct`. If the player guesses the secret number within the allowed attempts, **they win the game**; otherwise, **they lose**.
 
-Currently, two official plugins are available:
+## Key Features:
+**Random Number Generation**: Generates a secret number between 1 and 100.
+**User Input**: Allows the player to input their guesses.
+**Feedback Mechanism**: Provides feedback on whether the guess is too high, too low, or correct.**
+**Win/Loss Condition**: Determines if the player has won or lost the game based on their guesses.
+**Limited Attempts:** Limits the number of attempts the player can make.
+**Interactive UI:** Utilizes Ant Design components for a clean and responsive user interface.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech stack used:
+**React**: For building the user interface.
+**Vite**: As the build tool and development server.
+**TypeScript**: For type safety and improved developer experience.
+**Ant Design**: For UI components and styling.
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Testing
+I have used **Vitest** and **React Testing Library** for testing the components and logic of the application.
